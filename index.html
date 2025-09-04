@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Builder App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Burger Builder 🍔</h1>
+
+    <!-- Size -->
+    <label for="size">Choose Burger Size:</label>
+    <select id="size">
+      <option value="">--Select Size--</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <!-- Patty -->
+    <label for="patty">Choose Patty:</label>
+    <select id="patty">
+      <option value="">--Select Patty--</option>
+      <option value="Veg Patty">Veg Patty</option>
+      <option value="Chicken Patty">Chicken Patty</option>
+      <option value="Beef Patty">Beef Patty</option>
+    </select>
+
+    <!-- Toppings -->
+    <label>Toppings:</label>
+    <input type="checkbox" value="Lettuce"> Lettuce
+    <input type="checkbox" value="Tomato"> Tomato
+    <input type="checkbox" value="Onion"> Onion
+    <input type="checkbox" value="Cheese"> Cheese
+    <input type="checkbox" value="Pickles"> Pickles
+
+    <!-- Extras -->
+    <label>Extras:</label>
+    <input type="checkbox" value="Extra Cheese"> Extra Cheese
+    <input type="checkbox" value="French Fries"> French Fries
+    <input type="checkbox" value="Coke"> Coke
+
+    <!-- Delivery -->
+    <label for="delivery">Delivery Preference:</label>
+    <select id="delivery">
+      <option value="">--Select Delivery--</option>
+      <option value="Dine-in">Dine-in</option>
+      <option value="Takeaway">Takeaway</option>
+      <option value="Home Delivery">Home Delivery</option>
+    </select>
+
+    <button class="btn" onclick="buildBurger()">Build Burger</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
